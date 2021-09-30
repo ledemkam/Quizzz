@@ -43,43 +43,43 @@ function afficherResultats(tabCheck) {
 
    switch (nbDeFautes) {
       case 0:
-         titreResultat.innerText = `✔️ Bravo, c'est un sans faute ! ✔️`;
+         titreResultat.innerText = `✔️ Gut gemacht, es ist einwandfrei! ✔️`;
          aideResultat.innerText = '';
          noteResultat.innerText = '5/5';
          break;
       case 1:
-         titreResultat.innerText = `✨ Vous y êtes presque ! ✨`;
+         titreResultat.innerText = `✨ Du bist fast am Ziel! ✨`;
          aideResultat.innerText =
-            'Retentez une autre réponse dans la case rouge, puis re-validez !';
+            'Versuchen Sie eine andere Antwort im roten Feld, und bestätigen Sie dann erneut!';
          noteResultat.innerText = '4/5';
          break;
       case 2:
-         titreResultat.innerText = `✨ Encore un effort ... 👀`;
+         titreResultat.innerText = `✨Noch eine Anstrengung... 👀`;
          aideResultat.innerText =
-            'Retentez une autre réponse dans les cases rouges, puis re-validez !';
+            'Versuchen Sie es mit einer anderen Antwort in den roten Kästchen und bestätigen Sie dann erneut!';
          noteResultat.innerText = '3/5';
          break;
       case 3:
-         titreResultat.innerText = `👀 Il reste quelques erreurs. 😭`;
+         titreResultat.innerText = `👀 Es gibt noch einige Fehler. 😭`;
          aideResultat.innerText =
-            'Retentez une autre réponse dans les cases rouges, puis re-validez !';
+            'Versuchen Sie es mit einer anderen Antwort in den roten Kästchen und bestätigen Sie dann erneut!';
          noteResultat.innerText = '2/5';
          break;
       case 4:
-         titreResultat.innerText = `😭 Peux mieux faire ! 😭`;
+         titreResultat.innerText = `😭 Kann es besser machen! 😭`;
          aideResultat.innerText =
-            'Retentez une autre réponse dans les cases rouges, puis re-validez !';
+            'Versuchen Sie es mit einer anderen Antwort in den roten Kästchen und bestätigen Sie dann erneut!';
          noteResultat.innerText = '1/5';
          break;
       case 5:
-         titreResultat.innerText = `👎 Peux mieux faire ! 👎`;
+         titreResultat.innerText = `👎 Kann es besser machen!👎`;
          aideResultat.innerText =
-            'Retentez une autre réponse dans les cases rouges, puis re-validez !';
+            'Versuchen Sie es mit einer anderen Antwort in den roten Kästchen und bestätigen Sie dann erneut!';
          noteResultat.innerText = '0/5';
          break;
 
       default:
-         'Wops, cas innatendu.';
+         'Wops, unerwarteter Fall.';
    }
 }
 
